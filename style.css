@@ -3,8 +3,12 @@
     padding: 0px;
     font-family: roboto;
 }
+
 .flex{
     display: flex;
+}
+.invert{
+    filter: invert(0);
 }
 .just-align{
     align-items: center;
@@ -80,11 +84,37 @@ img {
 .twobuttons img{
     height: 16px;
 }
+.songlist{
+    /* box-sizing: border-box; */
+    margin: 0 40px;
+    overflow-y: auto;
+    min-height: 50vh;
+    max-height: 70vh;
+}
+.songlist >ul{
+    list-style: none;
+}
+.songlist>ul>li{
+    padding: 5px 10px;
+    min-height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 12px;
+    border: 2px solid #2d2b2b;
+    border-radius: 5px
+}
+.songlist>ul>li>div{
+    gap: 20px;
+    display: flex;
+    align-items: center;
+}
 .right{
     background-color: #121212;
     width: 1200px;
     margin: 7px 7px 7px 0px;
     border-radius: 7px;
+    position: relative;
 }
 .header{
     height: 119px;
@@ -98,6 +128,8 @@ img {
 }
 .headtop{
     justify-content: space-between;
+    padding-top: 10px;
+    padding: 10px;
 }
 .buttonwrapper{
     gap: 10px;
@@ -143,4 +175,90 @@ img {
 .button04>img{
     width: 25px;
     height: 25px;
+}
+.rightbottom{
+    padding: 20px;
+    min-height: 65vh;
+}
+.spotifyplaylist{
+     padding: 7px;
+     font-size: 30px;
+     font-weight: 700;
+}
+.cardContainer{
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    height: 65vh;
+}
+/* ___________scrollbar__________ */
+/* Scrollbar styles for WebKit browsers (Chrome, Safari) */
+.cardContainer::-webkit-scrollbar {
+    width: 8px; /* Narrow scrollbar width */
+}
+
+.cardContainer::-webkit-scrollbar-thumb {
+    background-color: #3A3A3A; /* Dark gray thumb */
+    border-radius: 10px; /* Rounded scrollbar thumb */
+}
+
+.cardContainer::-webkit-scrollbar-thumb:hover {
+    background-color: #555555; /* Slightly lighter gray on hover */
+}
+
+.cardContainer::-webkit-scrollbar-track {
+    background-color: #1C1C1C; /* Darker gray background for the track */
+    border-radius: 10px; /* Rounded track corners */
+}
+/* ___________scrollbar__________ */
+.Card {
+    position: relative;
+    padding: 7px;
+    width: 130px;
+    height: 230px;
+    border-radius: 7px;
+}
+.playbuttongreen{
+    position: absolute;
+    right: 16px;
+    bottom: 95px;
+    opacity: 0;
+    transition: all 0.4s ease-in-out ;
+}
+.Card:hover .playbuttongreen{
+    opacity: 1;
+    bottom: 105px;
+}
+ .Card:hover{
+    background-color: #252525;
+}
+.Card > *{
+    padding-top: 8px;
+}
+.Card > p{
+    font-size: small;
+}
+#Cardimg{
+    filter: none;
+    height: 130px;
+    width: 130px;
+}
+.player{
+    width: 100%;
+    box-sizing: border-box;
+    background-color:aqua;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 12px;
+}
+.player>div>img{
+    filter: invert(0);
+}
+.playerbuttons{
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    cursor: pointer;
 }

@@ -4,13 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spotimy Webplayer</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Flow+Circular&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
+    <title>Spotimy - Web Player: Music for everyone</title>
+
 </head>
 
 <body>
@@ -26,8 +27,9 @@
                 <div class="bottom1">
                     <div class="library-logo">
                         <ul class="unordered-list">
-                            <li class="list-elements"><img src="/logo files/library.svg" alt="library logo"><b>Your
-                                    Library</b></li>
+                            <li class="list-elements">
+                                <img id="library" src="/logo files/library.svg" alt="library logo"><b>Your Library</b>
+                            </li>
                         </ul>
                     </div>
                     <div class="twobuttons">
@@ -38,6 +40,22 @@
                             <img src="/logo files/showmore.svg" alt="showmore">
                         </div>
                     </div>
+                </div>
+                <div class="songlist">
+                    <ul>
+                        <!-- <li>
+                        <div>
+                            <div>
+                                <img src="/logo files/music.svg" alt="">
+                            </div>
+                            <div>
+                                <div>Song Name</div>
+                                <div>Artist</div>
+                            </div>
+                        </div>
+                            <div><img class=" invert" src="/logo files/playbuttongreen.svg" alt=""></div>
+                        </li> -->
+                    </ul>
                 </div>
                 <!-- <div class="bottom2">playlist button</div>
                 <div class="bottom3">search and recent</div>
@@ -74,13 +92,32 @@
                 </div>
 
             </header>
+            <div class="footer">
+                <div class="rightbottom">
+                    <div class="spotifyplaylist">Spotify Playlist</div>
+                    <div class="cardContainer">
+                        <div class="Card">
+                            <img id="Cardimg" src="/images/Playlistimg1.jpeg" alt="img">
+                            <div><img class="playbuttongreen" style="filter: invert(0);"
+                                    src="/logo files/playbuttongreen.svg" alt=""></div>
+                            <h2>Zzzzzz</h2>
+                            <p>Soothing, minimalist ambient for deep sleep.</p>
+                        </div>
+
+
+                    </div>
+                    <div class="player ">
+                        <div class="playerbuttons flex">
+                            <img src="/logo files/previous.svg" alt="">
+                            <img id="play" src="/logo files/playerplaybutton.svg" alt="">
+                            <img src="/logo files/next.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="footer">
-        <div>song name</div>
-        <div>player</div>
-        <div> controls</div>
-    </div>
 </body>
+<script src="script.js"></script>
 
 </html>
